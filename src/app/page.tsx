@@ -1,18 +1,29 @@
 import Image from "next/image";
+import Button from "@/components/ui/Button";
+import TypingText from "@/components/text/TypingText";
+import Header from "@/components/header/Header";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
+    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans ">
+      <main className="flex flex-1 w-full max-w-[80rem] flex-col items-center justify-between pb-32 px-16 bg-white  sm:items-start">
+          <Header/>
+          <Image
+            src="/hero.webp"
+            alt="Главное фото"
+            width={1200}
+            height={20}
+            priority
+            className="object-cover object-center"
+          />
+          <TypingText className="absolute top-[16rem] left-[12rem] uppercase font-[1.2rem] max-w-[24rem]"   text={[
+            'Привет, меня зовут Таня,',
+            'я маркетолог,',
+            'рада приветствовать тебя',
+            'на моем сайте!'
+            ]}  speed={40}
+          />
+          <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
           <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
             To get started, edit the page.tsx file.
           </h1>
