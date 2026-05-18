@@ -38,7 +38,7 @@ export default function TypingText({ text, speed = 100, className = '' }: Typing
             const timer = setTimeout(() => {
                 setCurrentLineIndex(prev => prev + 1);
                 setCurrentCharIndex(0);
-            }, speed * 2); // пауза между строками
+            }, speed * 2);
             return () => clearTimeout(timer);
         }
     }, [currentCharIndex, currentLineIndex, currentLine, lines, speed]);

@@ -48,6 +48,13 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
+@theme {
+  --color-bedge: #f6f3f1;
+  --color-section: #f8f3f2;
+  --grayText: #494746;
+  --color-base: #eee8e5;
+}
+
 body {
   font-family: "Jost", sans-serif;
 }
@@ -131,4 +138,17 @@ body {
   html {
     @apply font-sans;
   }
+}
+
+.gallery-thumbs .swiper-slide {
+  opacity: 0.55;
+  cursor: pointer;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active button {
+  border-color: #111;
 }

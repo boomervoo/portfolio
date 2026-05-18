@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import { Merriweather, Jost, Geist } from "next/font/google";
 import "./globals.css";
-import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 import React from "react";
 import { cn } from "@/lib/utils";
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
 const merriweather = Merriweather({
   variable: "--font-merriweather",
@@ -30,13 +29,16 @@ export default function RootLayout({
   return (
     <html
       lang="ru"
-      className={cn("h-full", "antialiased", merriweather.variable, jost.variable, "font-sans", geist.variable)}
+      className={cn(
+        "h-full",
+        "antialiased",
+        merriweather.variable,
+        jost.variable,
+        "font-sans",
+        geist.variable,
+      )}
     >
-      <body className="min-h-full flex flex-col">
-          <AppRouterCacheProvider>
-              {children}
-          </AppRouterCacheProvider>
-      </body>
+      <body className="relative min-h-full flex flex-col">{children}</body>
     </html>
   );
 }
