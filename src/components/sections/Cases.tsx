@@ -15,9 +15,9 @@ export function Cases() {
   const activeCase = CASES.find((item) => item.id === activeCaseId) ?? CASES[0];
 
   return (
-    <section id="cases" className="pb-[2rem]">
-      <h2 className="uppercase text-2xl font-semibold mb-4">Мои Кейсы</h2>
-      <CasesSlider activeCaseId={activeCaseId} onCaseClick={setActiveCaseId} />
+    <section id="cases" className="pb-[2rem] rounded-xl">
+      <h2 className="uppercase text-2xl pl-[2rem] font-semibold mb-4">Мои Кейсы</h2>
+      <CasesSlider className="max-w-[85rem] mb-10" activeCaseId={activeCaseId} onCaseClick={setActiveCaseId} />
       <CasesContent caseItem={activeCase} />
       <MyButton targetId="cases" onClick={() => setIsOpen(true)}>
         Открыть модалку

@@ -16,17 +16,6 @@ export function Experience() {
       id="experience"
       className="rounded-4xl bg-base grid grid-cols-2 gap-[2rem] w-full py-[2rem] px-[2rem] mb-[2rem]"
     >
-      <div className="grid grid-cols-2 gap-6 items-start justify-center">
-        <div className="w-full">
-          <Image
-            src="/photo.webp"
-            alt="Фото"
-            width={400}
-            height={600}
-            priority
-            className="object-cover object-center rounded-3xl"
-          />
-        </div>
         <div className="flex flex-col gap-6">
           <h2 className="text-xl text-black max-w-[17rem]">
             Разрабатываю маркетинг «под ключ» — от стратегии до роста
@@ -53,7 +42,6 @@ export function Experience() {
               </span>
             </div>
           </div>
-        </div>
       </div>
       <div className="flex gap-[2rem]">
         <Work />

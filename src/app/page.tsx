@@ -2,6 +2,8 @@ import Header from "@/components/header/Header";
 import About from "@/components/sections/About";
 import { Experience } from "@/components/sections/Experience";
 import { Cases } from "@/components/sections/Cases";
+import { Contact } from "@/components/sections/Contact";
+import { Footer } from "@/components/footer/Footer";
 
 export default function Home() {
   return (
@@ -11,6 +13,8 @@ export default function Home() {
         <About />
         <Experience />
         <Cases />
+        <Contact />
+        <Footer />
       </main>
     </div>
   );

@@ -1,10 +1,10 @@
 // icon
-import ArrowIcon from "@/../public/svg/projects/arrow-up.svg";
-import DevelopmentIcon from "@/../public/svg/projects/development.svg";
-import EmailIcon from "@/../public/svg/projects/email.svg";
-import PeopleIcon from "@/../public/svg/projects/people.svg";
-import SpinIcon from "@/../public/svg/projects/spin.svg";
-import StrategyIcon from "@/../public/svg/projects/strategy.svg";
+import ArrowIcon from "@svg/arrow-up.svg";
+import DevelopmentIcon from "@svg/development.svg";
+import EmailIcon from "@svg/email.svg";
+import PeopleIcon from "@svg/people.svg";
+import SpinIcon from "@svg/spin.svg";
+import StrategyIcon from "@svg/strategy.svg";
 
 import type { FC, SVGProps } from "react";
 

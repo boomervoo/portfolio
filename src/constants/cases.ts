@@ -4,32 +4,32 @@ export const CASES = [
     name: "Skillbox",
     label:
       "краткое описание кейса, достижений, успехов, улучшений и других приколов за которые тебе заплатили деньги",
-    img: "/images/cases/companies/skillbox-super.png",
+    img: "images/cases/companies/skillbox-super.png",
     spec: "описание",
     gallery: [
       {
         id: 1,
-        src: "/images/cases/slides/slide1.png",
+        src: "images/cases/slides/slide1.png",
         alt: "Главный экран проекта",
       },
       {
         id: 2,
-        src: "/images/cases/slides/slide2.png",
+        src: "images/cases/slides/slide2.png",
         alt: "Интерьер",
       },
       {
         id: 3,
-        src: "/images/cases/slides/slide3.png",
+        src: "images/cases/slides/slide3.png",
         alt: "Брендинг",
       },
       {
         id: 4,
-        src: "/images/cases/slides/slide4.png",
+        src: "images/cases/slides/slide4.png",
         alt: "Брендинг",
       },
       {
-        id: 3,
-        src: "/images/cases/slides/slide5.png",
+        id: 5,
+        src: "images/cases/slides/slide5.png",
         alt: "Брендинг",
       },
     ],
@@ -39,32 +39,32 @@ export const CASES = [
     name: "Geizer",
     label:
       "краткое описание кейса, достижений, успехов, улучшений и других приколов за которые тебе заплатили деньги",
-    img: "/images/cases/companies/geizer.png",
+    img: "images/cases/companies/geizer.png",
     spec: "описание",
     gallery: [
       {
         id: 1,
-        src: "/images/cases/slides/slide1.png",
+        src: "images/cases/slides/slide1.png",
         alt: "Главный экран проекта",
       },
       {
         id: 2,
-        src: "/images/cases/slides/slide2.png",
+        src: "images/cases/slides/slide2.png",
         alt: "Мобильная версия",
       },
       {
         id: 3,
-        src: "/images/cases/slides/slide3.png",
+        src: "images/cases/slides/slide3.png",
         alt: "Мобильная версия",
       },
       {
         id: 4,
-        src: "/images/cases/slides/slide4.png",
+        src: "images/cases/slides/slide4.png",
         alt: "Мобильная версия",
       },
       {
         id: 5,
-        src: "/images/cases/slides/slide5.png",
+        src: "images/cases/slides/slide5.png",
         alt: "Мобильная версия",
       },
     ],
@@ -74,27 +74,27 @@ export const CASES = [
     name: 'Онлайн-школа "Сосновка"',
     label:
       "краткое описание кейса, достижений, успехов, улучшений и других приколов за которые тебе заплатили деньги",
-    img: "/images/cases/companies/sosnovka.png",
+    img: "images/cases/companies/sosnovka.png",
     spec: "описание",
     gallery: [
       {
         id: 1,
-        src: "/images/cases/slides/slide1.png",
+        src: "images/cases/slides/slide1.png",
         alt: "Главный экран проекта",
       },
       {
         id: 2,
-        src: "/images/cases/slides/slide2.png",
+        src: "images/cases/slides/slide2.png",
         alt: "Главный экран проекта",
       },
       {
         id: 3,
-        src: "/images/cases/slides/slide3.png",
+        src: "images/cases/slides/slide3.png",
         alt: "Главный экран проекта",
       },
       {
         id: 4,
-        src: "/images/cases/slides/slide4.png",
+        src: "images/cases/slides/slide4.png",
         alt: "Главный экран проекта",
       },
     ],
@@ -109,22 +109,22 @@ export const CASES = [
     gallery: [
       {
         id: 1,
-        src: "/images/cases/slides/slide1.png",
+        src: "images/cases/slides/slide1.png",
         alt: "Главный экран проекта",
       },
       {
         id: 2,
-        src: "/images/cases/slides/slide2.png",
+        src: "images/cases/slides/slide2.png",
         alt: "Главный экран проекта",
       },
       {
         id: 3,
-        src: "/images/cases/slides/slide3.png",
+        src: "images/cases/slides/slide3.png",
         alt: "Главный экран проекта",
       },
       {
         id: 4,
-        src: "/images/cases/slides/slide4.png",
+        src: "images/cases/slides/slide4.png",
         alt: "Главный экран проекта",
       },
     ],
@@ -139,22 +139,22 @@ export const CASES = [
     gallery: [
       {
         id: 1,
-        src: "/images/cases/slides/slide1.png",
+        src: "images/cases/slides/slide1.png",
         alt: "Главный экран проекта",
       },
       {
         id: 2,
-        src: "/images/cases/slides/slide2.png",
+        src: "images/cases/slides/slide2.png",
         alt: "Главный экран проекта",
       },
       {
         id: 3,
-        src: "/images/cases/slides/slide3.png",
+        src: "images/cases/slides/slide3.png",
         alt: "Главный экран проекта",
       },
       {
         id: 4,
-        src: "/images/cases/slides/slide4.png",
+        src: "images/cases/slides/slide4.png",
         alt: "Главный экран проекта",
       },
     ],
@@ -164,27 +164,27 @@ export const CASES = [
 export const CASE_GALLERY = [
   {
     id: 1,
-    src: "/images/cases/slides/slide1.png",
+    src: "images/cases/slides/slide1.png",
     alt: "Главный экран проекта",
   },
   {
     id: 2,
-    src: "/images/cases/slides/slide2.png",
+    src: "images/cases/slides/slide2.png",
     alt: "Интерьер",
   },
   {
     id: 3,
-    src: "/images/cases/slides/slide3.png",
+    src: "images/cases/slides/slide3.png",
     alt: "Брендинг",
   },
   {
     id: 4,
-    src: "/images/cases/slides/slide4.png",
+    src: "images/cases/slides/slide4.png",
     alt: "Айдентика",
   },
   {
     id: 5,
-    src: "/images/cases/slides/slide5.png",
+    src: "images/cases/slides/slide5.png",
     alt: "Мобильная версия",
   },
 ];
