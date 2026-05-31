@@ -2,14 +2,17 @@ import Image from "next/image";
 import { MyButton } from "@/components/ui/my-button";
 
 // icon
-import ArrowIcon from "../../../public/svg/arrow-right.svg";
-import UserIcon from "../../../public/svg/about/user.svg";
-import ProjectIcon from "../../../public/svg/about/projects.svg";
-import RoundedIcon from "../../../public/svg/about/rounded.svg";
-import TrendIcon from "../../../public/svg/about/trend-up.svg";
+import ArrowIcon from "@svg/arrow-right.svg";
+import UserIcon from "@svg/user.svg";
+import ProjectIcon from "@svg/projects.svg";
+import RoundedIcon from "@svg/rounded.svg";
+import TrendIcon from "@svg/trend-up.svg";
 
 // type
 import type { FC, SVGProps } from "react";
+
+// utils
+import { getPath } from "@/utils/path";
 
 type Props = {
   text?: string;
@@ -66,7 +69,7 @@ export default function About({ text }: Props) {
   ];
   return (
     <section id="about" className="mb-[2rem] pt-8 relative">
-      <div className="grid grid-cols-2 rounded-xl w-full h-[650] bg-base">
+      <div className="grid grid-cols-2 gap-6 rounded-xl w-full h-[650] bg-base">
         <div className="flex flex-col pt-16 gap-6 pl-14 ">
           <span className="text-grayText text-md uppercase">маркетолог</span>
           <h1 className="text-4xl font-semibold line-clamp-2 text-grayText ">
@@ -99,8 +102,10 @@ export default function About({ text }: Props) {
             })}
           </div>
         </div>
-        <img
-          src="/hero.webp"
+        <Image
+          src={getPath("hero.webp")}
+          width={600}
+          height={600}
           alt="Главное фото"
           className="w-full h-full rounded-br-xl rounded-tr-xl object-cover"
         />

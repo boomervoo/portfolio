@@ -3,31 +3,35 @@ import { CASES } from "@/constants/cases";
 import { motion } from "framer-motion";
 
 type CasesSliderProps = {
+  className?: string;
   activeCaseId: number;
   onCaseClick: (id: number) => void;
 };
 
-export function CasesSlider({ activeCaseId, onCaseClick }: CasesSliderProps) {
+export function CasesSlider({ className, activeCaseId, onCaseClick }: CasesSliderProps) {
   return (
     <BaseSwiper
       items={CASES}
       getKey={(item) => item.id}
-      className="max-w-[1480px] w-full mb-8"
+      className={className}
       showPagination={false}
       prevButtonClassName="left-[-25] h-12 w-12 text-lg"
       nextButtonClassName="right-[-25] h-12 w-12 text-lg"
       options={{
-        spaceBetween: 20,
+        spaceBetween: 10,
         slidesPerView: 1,
         breakpoints: {
           768: {
-            slidesPerView: 2,
+            slidesPerView: 1,
           },
           1024: {
+            slidesPerView: 2,
+          },
+          1440: {
             slidesPerView: 3,
           },
           1920: {
-            slidesPerView: 3,
+            slidesPerView: 4,
           },
         },
       }}
@@ -67,9 +71,6 @@ export function CasesSlider({ activeCaseId, onCaseClick }: CasesSliderProps) {
                   src={item.img}
                   alt={item.spec}
                   className="h-[260px] w-full rounded-xl object-cover"
-                  animate={{
-                    scale: isActive ? 1.03 : 1,
-                  }}
                   transition={{
                     duration: 0.3,
                     ease: "easeOut",

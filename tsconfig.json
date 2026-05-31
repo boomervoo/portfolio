@@ -19,7 +19,10 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "@public/*": ["./public/*"],
+      "@images/*": ["./public/images/*"],
+      "@svg/*": ["./public/svg/*"],
     }
   },
   "include": [
