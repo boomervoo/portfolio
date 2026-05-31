@@ -1,60 +1,30 @@
-name: Deploy Next.js site to GitHub Pages
+import type { NextConfig } from "next";
 
-on:
-  push:
-    branches: [main]
+const repoName = "portfolio";
+const isProd = process.env.NODE_ENV === "production";
 
-  workflow_dispatch:
+const basePath = isProd ? `/${repoName}` : "";
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+const nextConfig: NextConfig = {
+    basePath,
+    assetPrefix: isProd ? `${basePath}/` : "",
+  
+    images: {
+      unoptimized: true,
+    },
+  
+    env: {
+      NEXT_PUBLIC_BASE_PATH: basePath,
+    },
+    
+    turbopack: {
+        rules: {
+            "*.svg": {
+                loaders: ["@svgr/webpack"],
+                as: "*.js",
+            },
+        },
+    },
+};
 
-concurrency:
-  group: pages
-  cancel-in-progress: true
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-          cache: npm
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Build project
-        run: npm run build
-
-      - name: Check output
-        run: ls -la out
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
-        with:
-          path: ./out
-
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    runs-on: ubuntu-latest
-    needs: build
-
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v5
+export default nextConfig;
