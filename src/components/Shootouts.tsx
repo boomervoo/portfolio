@@ -55,7 +55,7 @@ export function Shootouts() {
         return (
           <li
             key={bullet.id}
-            className="flex gap-2 items-center w-[calc((100%_-_2rem)_/_2)]"
+            className="flex gap-2 items-center w-[calc((100%_-_2rem)_/_2)] lg:justify-start justify-center"
           >
             <Icon className="shrink-0 w-4 h-4 block" />
             <span className="font-500 text-sm text-gray-600">

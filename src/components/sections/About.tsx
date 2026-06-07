@@ -26,11 +26,11 @@ export default function About({ text }: Props) {
     label: string;
   }[] = [
     {
-      id: "keys",
+      id: "cases",
       label: "Смотреть кейсы",
     },
     {
-      id: "feedback",
+      id: "contact",
       label: "Связаться со мной",
     },
   ];
@@ -68,11 +68,11 @@ export default function About({ text }: Props) {
     },
   ];
   return (
-    <section id="about" className="mb-[2rem] pt-8 relative">
-      <div className="grid grid-cols-2 gap-6 rounded-xl w-full h-[650] bg-base">
-        <div className="flex flex-col pt-16 gap-6 pl-14 ">
+    <section id="about" className="mb-[2rem] pt-8 relative scroll-mt-[70px]">
+      <div className="grid lg:grid-cols-2 grid-cols-1 gap-6 rounded-xl w-full lg:h-[650] h-full bg-base">
+        <div className="flex flex-col md:pt-16 gap-6 md:pl-14 p-14 pb-0">
           <span className="text-grayText text-md uppercase">маркетолог</span>
-          <h1 className="text-4xl font-semibold line-clamp-2 text-grayText ">
+          <h1 className="text-4xl font-semibold text-grayText ">
             Создаю маркетинг, который работает на бизнес
           </h1>
           <p className="text-xl text-grayText font-[400]">
@@ -107,10 +107,10 @@ export default function About({ text }: Props) {
           width={600}
           height={600}
           alt="Главное фото"
-          className="w-full h-full rounded-br-xl rounded-tr-xl object-cover"
+          className="w-full h-full md:rounded-br-xl md:rounded-tr-xl rounded-xl object-cover"
         />
       </div>
-      <div className="absolute bottom-4 flex justify-between bottom-6 left-[2rem] right-[2rem] rounded-4xl max-w-[100%] h-[10rem] bg-gray-50/65">
+      <div className="absolute bottom-4 xl:flex justify-between bottom-6 left-[2rem] right-[2rem] rounded-4xl max-w-[100%] 2xl:h-[10rem] bg-gray-50/65 xl:h-[8rem] hidden">
         {bullets.map((bullet, i) => {
           const Icon = bullet.icon;
 

@@ -16,18 +16,8 @@ export function Work() {
   const currentItems = activeTab === "work" ? WORK : PROJECTS;
 
   return (
-    <div className="flex gap-4">
-      {/*<div className="relative w-[40px] h-full">*/}
-      {/*  <div className="absolute left-1/2 -translate-x-1/2 w-[2px] h-full bg-gray-300" />*/}
-
-      {/*  <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full border-2 border-gray-300 bg-white" />*/}
-
-      {/*  <div className="absolute top-[215px] left-1/2 -translate-x-1/2 w-3 h-3 rounded-full border-2 border-gray-300 bg-white" />*/}
-      {/*  <div className="absolute top-[435px] left-1/2 -translate-x-1/2 w-3 h-3 rounded-full bg-black border-2 border-black" />*/}
-
-      {/*  <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3 h-3 rounded-full border-2 border-gray-300 bg-white" />*/}
-      {/*</div>*/}
-      <div className="flex flex-col gap-8">
+    <div className="flex gap-4 lg:h-[24rem] h-[28rem]">
+      <div className="flex flex-col gap-8 w-full">
         <div className="flex gap-4">
           {TABS.map((tab) => {
             const isActive = activeTab === tab.id;
@@ -62,7 +52,7 @@ export function Work() {
                   </span>
                   <span className="text-xl font-semibold">{exp.title}</span>
                   <p className="text-md text-gray-600">{exp.description}</p>
-                  <ul className="flex mb-4 gap-4 justify-between select-none">
+                  <ul className="flex mb-4 gap-4 justify-between select-none flex-wrap">
                     {exp.tags.map((item, i) => {
                       return (
                         <li className="text-sm font-semibold" key={i}>

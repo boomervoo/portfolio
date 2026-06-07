@@ -8,7 +8,11 @@ type CasesSliderProps = {
   onCaseClick: (id: number) => void;
 };
 
-export function CasesSlider({ className, activeCaseId, onCaseClick }: CasesSliderProps) {
+export function CasesSlider({
+  className,
+  activeCaseId,
+  onCaseClick,
+}: CasesSliderProps) {
   return (
     <BaseSwiper
       items={CASES}
@@ -27,11 +31,8 @@ export function CasesSlider({ className, activeCaseId, onCaseClick }: CasesSlide
           1024: {
             slidesPerView: 2,
           },
-          1440: {
+          1536: {
             slidesPerView: 3,
-          },
-          1920: {
-            slidesPerView: 4,
           },
         },
       }}
