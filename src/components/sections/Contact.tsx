@@ -7,13 +7,13 @@ import { AnimatePresence, motion } from "framer-motion";
 // icon
 import TelegramIcon from "@svg/telegram.svg";
 import LinkedinIcon from "@svg/linkedin.svg";
-import CopiedIcon from '@svg/copy.svg'
+import CopiedIcon from "@svg/copy.svg";
 
 export function Contact() {
   const [copiedLink, setCopiedLink] = useState<string | null>(null);
 
   const telegramName = "@tatianapopova";
-  const linkedinName = 'tatianaLavs'
+  const linkedinName = "tatianaLavs";
 
   async function handleCopy(link: string) {
     try {
@@ -29,7 +29,10 @@ export function Contact() {
   }
 
   return (
-    <div className="flex justify-between bg-base p-[2rem] rounded-xl w-full gap-6">
+    <div
+      id="contact"
+      className="flex justify-between bg-base p-[2rem] rounded-xl w-full gap-6 scroll-mt-[70px]"
+    >
       <div className="flex flex-col gap-4">
         <h2 className="uppercase text-2xl font-semibold mb-4">
           ДАВАЙТЕ РАБОТАТЬ ВМЕСТЕ
@@ -47,7 +50,7 @@ export function Contact() {
         >
           <TelegramIcon className="size-8 text-black" />
           <span className="text-md font-medium text-black">{telegramName}</span>
-          <CopiedIcon className="size-4 text-black"/>
+          <CopiedIcon className="size-4 text-black" />
 
           <AnimatePresence>
             {copiedLink === telegramName && (
@@ -72,7 +75,7 @@ export function Contact() {
         >
           <LinkedinIcon className="size-8 text-black" />
           <span className="text-md font-medium text-black">{linkedinName}</span>
-          <CopiedIcon className="size-4 text-black"/>
+          <CopiedIcon className="size-4 text-black" />
 
           <AnimatePresence>
             {copiedLink === linkedinName && (

@@ -33,7 +33,7 @@ export function ProjectGallery({
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <div className="w-full max-w-[640px]">
+    <div className="w-full min-w-0 lg:max-w-[640px]">
       <div className="relative overflow-hidden rounded-2xl">
         <Swiper
           modules={[Navigation, Thumbs]}

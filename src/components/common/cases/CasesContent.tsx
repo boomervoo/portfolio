@@ -20,7 +20,7 @@ export function CasesContent({ caseItem }: CasesContentProps) {
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -16 }}
         transition={{ duration: 0.25, ease: "easeOut" }}
-        className="grid gap-8 lg:grid-cols-[640px_1fr]"
+        className="grid gap-8 lg:grid-cols-[640px_1fr] w-full"
       >
         <ProjectGallery
           images={caseItem.gallery}
