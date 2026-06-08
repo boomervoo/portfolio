@@ -79,7 +79,7 @@ export default function About({ text }: Props) {
             Помогаю брендам выделяться на рынке, привлекать клиентов и достигать
             бизнес-результатов с помощью стратегического маркетинга{" "}
           </p>
-          <div className="flex gap-[1rem] pt-8">
+          <div className="flex lg:flex-row flex-col gap-[1rem] pt-8">
             {buttons.map((button, i) => {
               const isPrimary = i === 1;
 
