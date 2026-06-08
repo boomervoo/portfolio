@@ -1,6 +1,6 @@
 "use client";
 
-import { navigation, services, socials } from '@/constants/footer'
+import { navigation, services, socials } from "@/constants/footer";
 
 export function Footer() {
   function handleScroll(id: string) {
@@ -10,12 +10,12 @@ export function Footer() {
     element.scrollIntoView({
       behavior: "smooth",
       block: "start",
-    })
+    });
   }
 
   return (
     <footer className="mt-[2rem] pb-[2rem]">
-      <div className="grid grid-cols-4 gap-10 px-[2rem] py-[2rem]">
+      <div className="grid lg:grid-cols-4 grid-cols-2 gap-10 px-[2rem] py-[2rem]">
         <div className="flex flex-col justify-between gap-8">
           <div>
             <h2 className="text-md font-semibold uppercase text-black">

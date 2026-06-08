@@ -19,14 +19,14 @@ export function CasesSlider({
       getKey={(item) => item.id}
       className={className}
       showPagination={false}
-      prevButtonClassName="left-[-25] h-12 w-12 text-lg"
-      nextButtonClassName="right-[-25] h-12 w-12 text-lg"
+      prevButtonClassName="left-[-25] md:flex h-12 w-12 text-lg hidden"
+      nextButtonClassName="right-[-25] h-12 w-12 text-lg md:flex hidden"
       options={{
         spaceBetween: 10,
-        slidesPerView: 1,
+        slidesPerView: 1.5,
         breakpoints: {
           768: {
-            slidesPerView: 1,
+            slidesPerView: 1.5,
           },
           1024: {
             slidesPerView: 2,
@@ -43,7 +43,7 @@ export function CasesSlider({
           <motion.button
             type="button"
             onClick={() => onCaseClick(item.id)}
-            className="w-full cursor-pointer text-left rounded-xl p-1"
+            className="w-full cursor-pointer text-left rounded-xl p-1 "
             animate={{
               opacity: isActive ? 1 : 0.6,
               scale: isActive ? 1.01 : 1,

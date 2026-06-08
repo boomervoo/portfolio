@@ -92,7 +92,7 @@ export function Contact() {
           </AnimatePresence>
         </motion.div>
       </div>
-      <div className="w-1/2 ">
+      <div className="lg:w-1/2 sm:w-[26rem] lg:flex hidden">
         <Image
           src={getPath("hero.webp")}
           alt="Contact"
